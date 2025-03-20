@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI KIT</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    <main class="docs">
+      <section>
+        <div class="container">
+          <!-- КНОПКИ -->
+          <h3 class="title-3">Кнопки</h3>
+          <div class="ui-block">
+            <a href="#" class="button">Добавить пост</a>
+            <a href="#" class="button">Вход</a>
+            <a href="#" class="button">Выход</a>
+            <a href="#" class="button">☀️</a>
+            <a href="#" class="button">🌘</a>
+          </div>
+
+          <!-- КНОПКИ -->
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--secondary">Редактировать</a>
+            <a href="#" class="button button--secondary">Удалить</a>
+          </div>
+          <!-- 
+           КНОПКИ ДЛЯ ТЁМНОЙ ТЕМЫ
+           Если кнопки лежат в блоки с классом dark 
+           -->
+          <div class="ui-block mt-20 dark">
+            <a href="#" class="button button--secondary">Редактировать</a>
+            <a href="#" class="button button--secondary">Удалить</a>
+          </div>
+          <!-- КНОПКИ -->
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--loadmore">Загрузить ещё</a>
+          </div>
+
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--lg">Обновить</a>
+            <a href="#" class="button button--secondary button--lg">Отмена</a>
+          </div>
+          <!-- Элименты формы -->
+          <h3 class="title-3">Элементы формы</h3>
+
+          <div class="ui-block ui-block--form mt-20">
+            <label class="fieldset">
+              <div class="label">Email</div>
+              <input type="email" id="email" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Пароль</div>
+              <input type="password" id="password" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Название</div>
+              <input type="text" id="text" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Содержание</div>
+              <textarea name="content" id="content" class="textarea"></textarea>
+            </label>
+
+            <fieldset>
+              <div class="label">Обложка</div>
+              <label class="fieldset fieldset--checkbox">
+                <input type="checkbox" />
+                Удалить обложку
+              </label>
+              <input type="file" class="file" />
+            </fieldset>
+          </div>
+
+          <h3 class="title-3"></h3>
+          <div class="ui-block  mt-20"></div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
