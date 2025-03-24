@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Page</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header__row">
+				<div class="header__logo">
+					<div class="logo">
+						<a href="index.html" class="logo__link">MY&#160;BLOG</a>
+					</div>
+				</div>
+
+				<div class="header__btns">
+					<a href="create-post.html" class="button">Добавить пост</a>
+					<a href="login.html" class="button">Вход</a>
+					<a href="#" class="button">🌘</a>
+				</div>
+				<button class="mobile-nav-btn none">
+					<div class="nav-icon"></div>
+				</button>
+			</div>
+		</header>
+
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="docs.html">Документация</a></li>
+			</ul>
+		</div>
+
+		<main class="page-content">
+			<div class="container container-narrow">
+				<form class="form">
+					<h2 class="form__title">Добавить запись</h2>
+
+					<label class="fieldset">
+						<div class="label">Название</div>
+						<input type="text" id="text" class="input" />
+					</label>
+
+					<label class="fieldset">
+						<div class="label">Содержание</div>
+						<textarea name="content" id="content" class="textarea"></textarea>
+					</label>
+
+					<fieldset>
+						<div class="label">Обложка</div>
+						<div class="fieldset__cover--wrapper">
+							<picture>
+								<source srcset="./img/post/cover-edit.webp 1x, ./img/post/cover-edit@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/post/cover-edit.jpg 1x, ./img/post/cover-edit@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/post/cover-edit.jpg" class="fieldset__cover" alt="" />
+							</picture>
+						</div>
+						<label class="fieldset fieldset--checkbox">
+							<input type="checkbox" />
+							Удалить обложку
+						</label>
+						<input type="file" class="file" />
+					</fieldset>
+					<button class="button button-lg">Опубликовать</button>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">&#169; 2025 MicroBlog</div>
+			</div>
+		</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

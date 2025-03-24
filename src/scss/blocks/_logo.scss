@@ -1,3 +1,8 @@
 .logo {
-    font-size: 32px;
+  font-family: 'Unbounded', sans-serif;
+  &__link {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+  }
 }

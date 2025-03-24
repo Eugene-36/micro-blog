@@ -86,8 +86,20 @@
             </fieldset>
           </div>
 
+          <!-- Uikit Пост-->
           <h3 class="title-3"></h3>
-          <div class="ui-block  mt-20"></div>
+          <div class="ui-block ui-block--page-bg  mt-20">
+            @@include('blocks/post.html')
+            @@include('blocks/post-mini.html')
+
+
+          </div>
+
+          <!-- Секции -->
+          <h3 class="title-3">Секции</h3>
+          <div class="ui-block ui-block--section mt-20">
+            @@include('blocks/header.html') @@include('blocks/footer.html')
+          </div>
         </div>
       </section>
     </main>

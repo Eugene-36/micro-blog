@@ -1,16 +1,36 @@
 .header {
-	background-color: #c0e4f4;
-	padding: 50px 0;
+  color: #fff;
+  background-color: #1f1f1f;
+  padding: 24px 0;
 
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: block;
+    }
+  }
+  &__btns {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+
+    @include tablet {
+      display: none;
+    }
+  }
 }
 
 .header__nav {
-	@include tablet {
-		display: none;
-	}
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__logo {
+  justify-self: center;
 }

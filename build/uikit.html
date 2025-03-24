@@ -13,21 +13,24 @@
 
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="header__row">
-					<div class="logo">ВебКадеми</div>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li><a href="index.html" class="active">Главная</a></li>
-							<li><a href="docs.html">Документация</a></li>
-						</ul>
-					</nav>
-					<button class="mobile-nav-btn">
-						<div class="nav-icon"></div>
-					</button>
+			<div class="header__row">
+				<div class="header__logo">
+					<div class="logo">
+						<a href="index.html" class="logo__link">MY&#160;BLOG</a>
+					</div>
 				</div>
+
+				<div class="header__btns">
+					<a href="create-post.html" class="button">Добавить пост</a>
+					<a href="login.html" class="button">Вход</a>
+					<a href="#" class="button">🌘</a>
+				</div>
+				<button class="mobile-nav-btn">
+					<div class="nav-icon"></div>
+				</button>
 			</div>
 		</header>
+
 		<div class="mobile-nav">
 			<ul class="mobile-nav__list">
 				<li><a href="index.html">Главная</a></li>
@@ -104,16 +107,90 @@
 						</fieldset>
 					</div>
 
+					<!-- Uikit Пост-->
 					<h3 class="title-3"></h3>
-					<div class="ui-block  mt-20"></div>
+					<div class="ui-block ui-block--page-bg  mt-20">
+						<article class="post">
+							<div class="post__date">16.03.2025</div>
+							<h2 class="post__title">Сила, заключённая в&#160;металле</h2>
+							<div class="post__img--wrapper">
+								<picture>
+									<source srcset="./img/post/post-img1.webp 1x, ./img/post/post-img1@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/post/post-img1.jpg 1x, ./img/post/post-img1@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/post/post-img1.jpg" alt="" class="post__img" />
+								</picture>
+							</div>
+							<div class="post__text">
+								<p>
+									Некоторые автомобили созданы не&#160;просто для передвижения&#160;&#8212; они олицетворяют мощь, свободу и&#160;стиль. Этот мускулистый Dodge
+									Challenger в&#160;бирюзовом цвете &#160;&#8212; настоящий символ американской автомобильной культуры. Его агрессивный силуэт, заниженная посадка
+									и&#160;черные диски говорят сами за&#160;себя: это машина, которая требует дороги.
+								</p>
+							</div>
+							<div class="post__readmore">
+								<a href="post.html" class="link">Читать далее</a>
+							</div>
+							<div class="post__buttons">
+								<a href="edit-post.html" class="button button--secondary">Редактировать</a>
+								<a href="delete-post.html" class="button button--secondary">Удалить</a>
+							</div>
+						</article>
+
+						<article class="post">
+							<div class="post__date">16.03.2025</div>
+							<div class="post__text post__text--large">
+								<p>
+									Горы в&#160;тишине, отражение в&#160;воде&#160;&#8212; мир застыл, дыша. Шепчет бриз траве, солнце тает за&#160;холмами, чайка вдаль летит. 🌿✨
+								</p>
+							</div>
+							<div class="post__buttons">
+								<a href="edit-post.html" class="button button--secondary">Редактировать</a>
+								<a href="delete-post.html" class="button button--secondary">Удалить</a>
+							</div>
+						</article>
+					</div>
+
+					<!-- Секции -->
+					<h3 class="title-3">Секции</h3>
+					<div class="ui-block ui-block--section mt-20">
+						<header class="header">
+							<div class="header__row">
+								<div class="header__logo">
+									<div class="logo">
+										<a href="index.html" class="logo__link">MY&#160;BLOG</a>
+									</div>
+								</div>
+
+								<div class="header__btns">
+									<a href="create-post.html" class="button">Добавить пост</a>
+									<a href="login.html" class="button">Вход</a>
+									<a href="#" class="button">🌘</a>
+								</div>
+								<button class="mobile-nav-btn">
+									<div class="nav-icon"></div>
+								</button>
+							</div>
+						</header>
+
+						<div class="mobile-nav">
+							<ul class="mobile-nav__list">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="docs.html">Документация</a></li>
+							</ul>
+						</div>
+
+						<footer class="footer">
+							<div class="container">
+								<div class="footer__copyright">&#169; 2025 MicroBlog</div>
+							</div>
+						</footer>
+					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__copyright">
-					<p>Сборка сделана в&#160;школе <a href="https://webcademy.ru" target="_blank">webcademy.ru</a></p>
-				</div>
+				<div class="footer__copyright">&#169; 2025 MicroBlog</div>
 			</div>
 		</footer>
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800');
-
+@import url('https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900');
 html {
   scroll-behavior: smooth;
   background-color: rgb(39, 39, 39);
@@ -32,6 +32,9 @@ pre.code {
   padding: 1rem;
   border-radius: 4px;
 }
+.page-content {
+  padding: 40px 0;
+}
 .ui-block {
   border: 1px dashed #777;
   background-color: #e9f1f6;
@@ -39,7 +42,12 @@ pre.code {
   display: flex;
   gap: 20px;
 
-  &--form {
+  &--form,
+  &--section {
+    flex-direction: column;
+  }
+  &--page-bg {
+    background-color: #e7f0f3;
     flex-direction: column;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MicroBlog Main</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
@@ -20,9 +20,20 @@
 
     <main class="page-content">
       <div class="container container-narrow">
-        <div class="posts-wrapper">
-          @@include('blocks/post.html') @@include('blocks/post-mini.html')
-        </div>
+        <form class="form">
+          <h2 class="form__title">Вход</h2>
+
+          <label class="fieldset">
+            <div class="label">Email</div>
+            <input type="email" id="email" class="input" />
+          </label>
+
+          <label class="fieldset">
+            <div class="label">Пароль</div>
+            <input type="password" id="password" class="input" />
+          </label>
+          <button class="button button-lg">Войти</button>
+        </form>
       </div>
     </main>
     @@include('blocks/footer.html')
