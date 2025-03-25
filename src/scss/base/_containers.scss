@@ -14,7 +14,7 @@
   width: 100%;
 }
 .container-narrow {
-  max-width: 630px;
+  max-width: var(--container-narrow);
 }
 .container-full {
   padding: 0 var(--container-padding);

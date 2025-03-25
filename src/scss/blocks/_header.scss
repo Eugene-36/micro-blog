@@ -1,7 +1,7 @@
 .header {
   color: #fff;
   background-color: #1f1f1f;
-  padding: 24px 0;
+  padding: 24px 20px;
 
   &__row {
     display: grid;
@@ -33,4 +33,13 @@
 
 .header__logo {
   justify-self: center;
+}
+.header__mobile-nav-btn {
+  display: none;
+  z-index: 999;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 }

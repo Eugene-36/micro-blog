@@ -14,6 +14,33 @@
   --laptop-size: 1199px;
   --tablet-size: 959px;
   --mobile-size: 599px;
+
+  --post-wrapper-gap: 30px;
+  --container-narrow: 630px;
+  --post-border-radius: 12px;
+  --post-gap-between: 14px;
+  --post-padding: 24px;
+  --post-title: 28px;
+  --post-text: 16px;
+  --post-text-lg: 28px;
+  --post-text-md: 22px;
+  --post-img-radius: 12px;
+  --footer-copyright-text: 14px;
+
+  @include mobile {
+    --container-narrow: 100%;
+    --post-border-radius: 0px;
+    --container-padding: 0;
+    --post-gap-between: 12px;
+    --post-padding: 12px;
+    --post-title: 22px;
+    --post-text: 14px;
+    --post-text-lg: 22px;
+    --post-text-md: 18px;
+    --post-img-radius: 8px;
+    --post-wrapper-gap: 10px;
+    --footer-copyright-text: 12px;
+  }
 }
 
 .dark {
