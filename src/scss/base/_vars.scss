@@ -27,6 +27,11 @@
   --post-img-radius: 12px;
   --footer-copyright-text: 14px;
 
+  --post-bg: #fff;
+  --post-text-color: #000;
+  --link-color: #0069ca;
+  --label-color: #000;
+
   @include mobile {
     --container-narrow: 100%;
     --post-border-radius: 0px;
@@ -44,6 +49,10 @@
 }
 
 .dark {
-  --page-bg: #252526;
+  --page-bg: #1f1f1f;
   --text-color: #fff;
+  --post-bg: #313131;
+  --post-text-color: #efefef;
+  --link-color: #7db3e6;
+  --label-color: #6bb6ed;
 }
