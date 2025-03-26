@@ -3,7 +3,11 @@
     @content;
   }
 }
-
+@mixin desktop() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
 @mixin tablet() {
   @media (max-width: 991px) {
     @content;

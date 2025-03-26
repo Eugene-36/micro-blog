@@ -15,6 +15,10 @@
 .mobile-nav--open {
   max-height: 200px;
   padding: 10px 12px;
+  
+  @include desktop {
+    display: none;
+  }
 }
 
 .mobile-nav a {

@@ -31,6 +31,7 @@
   --post-text-color: #000;
   --link-color: #0069ca;
   --label-color: #000;
+  --post-prev-border-color: rgba(0, 0, 0, 0.3);
 
   @include mobile {
     --container-narrow: 100%;
@@ -55,4 +56,5 @@
   --post-text-color: #efefef;
   --link-color: #7db3e6;
   --label-color: #6bb6ed;
+  --post-prev-border-color: rgba(255, 255, 255, 0.1);
 }

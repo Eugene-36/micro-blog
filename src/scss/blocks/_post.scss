@@ -55,7 +55,7 @@
 }
 .post--preview {
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--post-prev-border-color, rgba(0, 0, 0, 0.3));
 }
 .post__text--full {
   p {

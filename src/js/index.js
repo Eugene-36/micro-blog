@@ -10,9 +10,12 @@ Fancybox.bind('[data-fancybox]', {
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
-const btnElement = document.getElementById('toggleDarkMode');
-btnElement.addEventListener('click', () => {
-  return document.body.classList.toggle('dark')
-    ? (btnElement.innerText = '☀️')
-    : (btnElement.innerText = '🌘');
+const btnElement = [...document.querySelectorAll('.toggleDarkMode')];
+
+btnElement.forEach((element) => {
+  element.addEventListener('click', () => {
+    return document.body.classList.toggle('dark')
+      ? (element.innerText = '☀️')
+      : (element.innerText = '🌘');
+  });
 });
